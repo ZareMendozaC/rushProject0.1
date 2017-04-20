@@ -1,0 +1,69 @@
+*{
+}
+body {
+    margin: 0;
+    font-family: 'Alegreya', serif;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #292929;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #f7484e;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+
+}
+.overlay .closebtn {
+    position: absolute;
+    top: -13px;
+    right: 4px;
+    font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+.logo-menu{
+    width: 10%;
+    margin-top: -40px;
+    margin-bottom: 35px;
+}
+@media(min-width: 360px) and (max-width: 1024px){
+    .logo-menu{
+        width: 20%;
+     }
+}
+.hero {
+    /*background: url(../images/fondo.jpg) no-repeat center;*/
+    background-color: black;
+    background-size: cover;
+    height: 500px;
+    background-attachment: fixed;
+    background-size: cover;
+}
